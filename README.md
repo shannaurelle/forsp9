@@ -38,3 +38,15 @@ qemu-system-x86_64 -m 2048 -cpu Haswell -accel whpx,kernel-irqchip=off -smp 4,th
 - CPU: Intel Core i5-4300U @ 1.9 GHz (4 CPUs), ~2.5 GHz
 - RAM: 16 GB 
 - System Model: HP Elitebook 840 G1
+
+### Test Cases
+These programs are found in the examples folder at xorvoid's github repository of forsp
+- currying.fp
+- demo.fp
+- factorial.fp
+- fibonnaci-functional.fp
+- fibonnaci-imperative.fp
+- forsp.fp
+- higher-order-functions.fp
+- low-level.fp
+- tutorial.fp
