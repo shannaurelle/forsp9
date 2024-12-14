@@ -10,7 +10,7 @@ https://xorvoid.com/forsp.html - Forsp language web article
 ### Plan 9 C
 https://doc.cat-v.org/plan_9/programming/c_programming_in_plan_9 - Programming in Plan 9 C
 
-https://plan9.io/sys/doc/comp.html - how to use the Plan 9 C Compiler
+https://plan9.io/sys/doc/comp.html - How to use the Plan 9 C Compiler
 
 https://plan9.io/sys/doc/compiler.html - Plan 9 C compilers
 
