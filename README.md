@@ -40,7 +40,7 @@ qemu-system-x86_64 -m 2048 -cpu Haswell -accel whpx,kernel-irqchip=off -smp 4,th
 - System Model: HP Elitebook 840 G1
 
 ### Test Cases
-These programs are found in the examples folder at xorvoid's github repository of forsp
+These programs are found in the examples folder at [xorvoid's github repository of forsp](https://github.com/xorvoid/forsp)
 - currying.fp
 - demo.fp
 - factorial.fp
