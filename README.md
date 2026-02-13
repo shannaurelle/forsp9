@@ -21,6 +21,15 @@ http://fqa.9front.org/ - Frequently Questioned Answers in 9front
 
 ## Tests
 
+## Instructions
+1. Run a Plan 9 instance on your virtual machine via QEMU using the specific QEMU command stated below. 
+2. Clone this repository on the Plan 9 virtual machine using `git clone <HTTPS repository link>` as Plan 9 only supports git in console form. Make sure that the Plan 9 instance has internet connection.
+3. Run this command to compile the program: `8c forsp9.c`
+4. Run this command to get the executable: `8l -o 8.forsp9 forsp9.8`
+5. Execute the test programs: e.g. `8.forsp9 tutorial.fp`
+
+More information on the test specifications are provided in the documentation links above and the subsequent sections below. Make sure to completely follow the QEMU specifications, QEMU command, and hardware specifications for a faithful replication.
+
 ### QEMU Command
 ```
 qemu-system-x86_64 -m 2048 -cpu Haswell -accel whpx,kernel-irqchip=off -smp 4,threads=4 -net nic,model=virtio,macaddr=52:54:00:12:34:56 -net user,hostfwd=tcp::5640-:564,hostfwd=tcp::17010-:17010,hostfwd=tcp::17019-:17019,hostfwd=tcp::12567-:567,hostfwd=tcp::17020-:17020 -device virtio-scsi-pci,id=scsi -drive if=none,id=vd0,file=9front.qcow2.img -device scsi-hd,drive=vd0 -audiodev sdl,id=audiodev-0,timer-period=2000 -device ich9-intel-hda -device hda-duplex,audiodev=audiodev-0,mixer=false,use-timer=true
